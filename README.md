@@ -66,6 +66,12 @@ software is going to coach kids, anyone should be able to read what it says and 
   "squish the bug." No "swing down."
 - **Punches up, never down.** Headlines lead with a strength, then name one thing to chase.
 
+## The story
+
+A crack that turned out to be the net. A swing that graded 53 or 79 depending on where you started
+the clip. A skeleton that jumped from a kid to their parent. [Read how this engine got built](STORY.md),
+including the parts where the data told us no.
+
 ## How it works, in plain terms
 
 1. **Bring a skeleton.** Any pose source works: Apple Vision, MediaPipe, anything that gives body

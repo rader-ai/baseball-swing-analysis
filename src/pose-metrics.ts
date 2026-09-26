@@ -164,7 +164,7 @@ export function swingMetrics(frames: PoseFrame[], cal: Calibration = DEFAULT_CAL
   if (spineAng.length >= 2 && headRise.length >= 2) {
     // ROBUST range (p90-p10), not max-min: one noisy Vision frame used to swing posture wildly
     // (60/35/50 for the same swing at 30/40/48 frames). Stiffer coefficients so the visible
-    // "standing up out of the hinge" actually shows (a coach saw it on 13/13). docs/research/24 §3.2.
+    // "standing up out of the hinge" actually shows (AI rubric judges flagged it on 13/13; no human coach has graded the set yet). docs/research/24 §3.2.
     const angRange = pctl(spineAng, 0.9) - pctl(spineAng, 0.1);
     const rise = (100 * (pctl(headRise, 0.9) - pctl(headRise, 0.1))) / bh;
     const score = Math.round(clamp(100 - angRange * cal.posture.angCoeff - rise * cal.posture.riseCoeff));

@@ -107,8 +107,8 @@ const METRICS_BY_MODE: Record<AgeMode, MetricKey[]> = {
   full: ['head', 'posture', 'balance', 'stride'],
 };
 
-/** Overall-grade weighting — trust × discrimination. Validated on 13 real swings: posture and
- *  balance carry the signal a coach actually sees (incl. the stand-up flaw), while stride
+/** Overall-grade weighting — trust × discrimination. Tuned on 13 real swings graded by AI rubric judges (a human coach has not graded the set yet):
+ *  posture and balance carry the signal the judges actually saw (incl. the stand-up flaw), while stride
  *  magnitude is depth-limited and barely gradable (docs/research/24 §2.2/§3.4), so it gets a
  *  small weight. Head stays meaningful (the cleanest motion read) but no longer dominates. */
 const METRIC_WEIGHT: Partial<Record<MetricKey, number>> = {
