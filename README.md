@@ -48,9 +48,9 @@ software is going to coach kids, anyone should be able to read what it says and 
 - **Estimates are labeled as estimates.** Stride comes back flagged as not fully reliable from 2D,
   and it counts for less in the overall grade.
 - **Trust-weighted grade.** The overall number leans on the clean reads and barely on the shaky
-  one. The weights were set on 13 real swings a coach graded. That's a small
-  sample, and a single grade still only loosely tracks what a coach would say, which is why the
-  trend view exists.
+  one. The weights were set on 13 real swings, graded by AI judges working from
+  a coaching rubric as stand-ins until a human coach grades them. That's a small sample, and a
+  single grade still only loosely tracks a coach's eye, which is why the trend view exists.
 - **Changes have to clear the noise.** The trend view compares a hitter's first session to their latest
   and only calls a change when it beats 15% and that hitter's own swing-to-swing wobble. It needs
   two sessions of three or more clean swings before it says anything, and a dip reads as "watch
