@@ -1,0 +1,45 @@
+{
+  "name": "baseball-swing-analysis",
+  "version": "0.1.0",
+  "description": "Pose-based baseball and softball swing analysis: swing phases, graded mechanics, plain-English reports, progress trends, and bat-crack contact timing. Pure TypeScript, zero runtime dependencies.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "files": [
+    "dist",
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "exports": {
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "scripts": {
+    "test": "node --test \"src/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "baseball",
+    "softball",
+    "swing-analysis",
+    "pose-estimation",
+    "biomechanics",
+    "coaching",
+    "sports-science"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "~5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rader-ai/baseball-swing-analysis.git"
+  },
+  "homepage": "https://github.com/rader-ai/baseball-swing-analysis#readme"
+}
